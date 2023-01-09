@@ -1,0 +1,60 @@
+body {
+    background: #2196F3;
+}
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container label {
+    display: block;
+}
+.container form .form-content {
+    margin: 10px 0;
+    position: relative;
+    padding: 10px;
+    border: dashed 2px #B1B1B1;
+}
+.container form button  {
+    background: #2196F3;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 7px 20px;
+}
+.output-container {
+    height: calc(100vh - 150px);
+    overflow: auto;
+    overflow-x: hidden;
+    background: #F9F9F9;
+}
+.alert {
+    padding: 7px 10px;
+    color: #000;
+    font-weight: bold;
+    border: solid 1px #000;
+    background: #e2e8f0;
+    margin-bottom: 15px;
+}
+.alert.alert-danger {
+    background: #FEF2F0;
+    border-color: #F44336;
+}
+.alert.alert-success {
+    background: #F4FAF4;
+    border-color: #4CAF50;
+}
+.container table {
+    display: block;
+    width: 100%;
+}
+.container table thead {
+    background: #D8D8D8;
+}
+.container table thead th {
+    width: 16.66%;
+    padding: 6px 0;
+}
