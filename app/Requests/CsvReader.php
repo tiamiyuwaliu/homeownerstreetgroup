@@ -24,7 +24,10 @@ class CsvReader {
      * @return boolean
      */
     public function isValid($file) {
-        return $file->extension() == 'csv';
+        if($file->extension() != 'csv') return false;
+        //add more level of security check to the file in case of bad or empty csv content
+        if (!array_map('str_getcsv', file($file))) return false;
+        return true;
     }
 
     /**
